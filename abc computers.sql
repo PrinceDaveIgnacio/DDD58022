@@ -21,7 +21,7 @@ VALUE ('6541001','DELL','OptiPlex 9020','Intel i5 - 4532','3.00','6.0 Gbytes','1
 INSERT INTO COMPUTER(Serial_Number, Make, Model, ProcessorType, ProcessorSpeed, MainMemory, DiskSize) 
 VALUE ('6541002','DELL','OptiPlex 9021','Intel i5 - 4533','3.00','6.0 Gbyte','1.0 Tbytes');
 
-ALTER TABLE Computer ADD Graphics TEXT(40) NOT NULL COMMENT 'Must be all "Integrated Intel HD Graphics 4600"';
+ALTER TABLE Computer ADD Graphics TEXT(40) NOT NULL COMMENT 'Must be all "Integrated Intel HD Graphics 4600";
 
 UPDATE Computer SET Graphics = 'Integrated Intel HD Graphics 4600' WHERE Serial_Number= 9871234;
 UPDATE Computer SET Graphics = 'Integrated Intel HD Graphics 4600' WHERE Serial_Number= 9871235;
